@@ -4,31 +4,18 @@ A growing collection of modern, reusable, and beautiful **SwiftUI buttons** — 
 
 <h3>🚀 Button Previews</h3>
 
-<!-- Row 1 -->
 <table align="center">
   <tr>
-    <td align="center"><b>Primary Button</b></td>
-    <td align="center"><b>Glass Button</b></td>
-    <td align="center"><b>Neumorphic Button</b></td>
+    <td align="center"><b>Primary</b></td>
+    <td align="center"><b>Glass</b></td>
+    <td align="center"><b>Neumorphic</b></td>
+    <td align="center"><b>3D Tap</b></td>
   </tr>
   <tr>
-    <td><img src="Gifs/Primary Button.gif" width="140" /></td>
-    <td><img src="Gifs/Glass Button.gif" width="140" /></td>
-    <td><img src="Gifs/Neumorphic Button.gif" width="140" /></td>
-  </tr>
-</table>
-
-<br/>
-
-<!-- Row 2 -->
-<table align="center">
-  <tr>
-    <td align="center"><b>Gradient Glow Button</b></td>
-    <td align="center"><b>3D Tap Button</b></td>
-  </tr>
-  <tr>
-    <td><img src="Gifs/Gradient Glow Button.gif" width="140" /></td>
-    <td><img src="Gifs/3D Tap Button.gif" width="140" /></td>
+    <td><img src="Gifs/Primary Button.gif" width="200"/></td>
+    <td><img src="Gifs/Glass Button.gif" width="200"/></td>
+    <td><img src="Gifs/Neumorphic Button.gif" width="200"/></td>
+    <td><img src="Gifs/3D Tap Button.gif" width="200"/></td>
   </tr>
 </table>
 
@@ -45,7 +32,7 @@ This pack gives you beautiful, drop-in buttons to instantly level up your UI.
 ## 🔧 Tech Notes
 
 - Built in **SwiftUI 5**
-- Compatible with **iOS 17+**
+- Compatible with **iOS 16+**
 - Preview GIFs included in `/Gifs/`
 
 ---
@@ -69,7 +56,6 @@ PRs welcome; got a button style you love? Open an issue or reach out:
 - ✅ Primary Button  
 - ✅ Glassmorphism Button  
 - ✅ Neumorphic Button  
-- ✅ Gradient Glow Button  
 - ✅ 3D Tap Button  
 
 More styles coming soon...
@@ -83,6 +69,30 @@ Each button is a standalone SwiftUI view — plug it in, customize it, go.
 \
 Primary Button
 ```swift
-PrimaryButton(title: "Continue") {
+PrimaryButton("Continue") {
+    print("Tapped")
+}
+```
+
+\
+**Glass Button**
+```swift
+GlassButton("Glass Tap") {
+    print("Tapped")
+}
+```
+
+\
+**Neumorphic Button**
+```swift
+NeumorphicButton("Soft Touch") {
+    print("Tapped")
+}
+```
+
+\
+**3D Tap Button**
+```swift
+Tap3DButton("Tap Me") {
     print("Tapped")
 }
